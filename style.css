@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Belanosima", sans-serif;
+}
+
+:root {
+  --color-principal: #fc7300;
+  --color-secundario: #1f8a70;
+  --color-texto: #00425a;
+  --color-footer: #181823;
+  --color-fondo: #eff5f5;
+}
+
+.nav-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+span:hover {
+  transition: all 0.2s ease-in;
+  color: var(--color-fondo);
+}
+
+.navbar {
+  padding: 0.5rem;
+  background-color: var(--color-principal);
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  border-radius: 50%;
+}
+
+.header {
+  background-image: url("img/fondoheader.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+.header h1 {
+  font-family: "Belanosima", sans-serif;
+  font-size: 3.5rem;
+
+  -webkit-text-fill-color: var(--color-principal);
+  -webkit-text-stroke: 1px var(--color-fondo);
+}
+.header p {
+  font-size: 1.5rem;
+  color: var(--color-fondo);
+  background: var(--color-principal);
+  padding: 0 0.5rem;
+}
+
+.somos {
+  height: 10%;
+  padding: 2px;
+  background-color: var(--color-footer);
+  color: var(--color-fondo);
+  text-align: center;
+  justify-content: center;
+}
+
+.somos:hover {
+  transition: all 0.2s ease-in;
+  background-color: var(--color-secundario);
+}
+
+.titulo {
+  font-size: 2rem;
+  color: var(--color-principal);
+  padding: 10px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.textoParrafo {
+  font-size: 1rem;
+  color: var(--color-fondo);
+  padding: 10px 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.cajas {
+  padding: 40px 20px;
+  background-color: var(--color-footer);
+  justify-content: space-evenly;
+}
+.imagDescriptiva {
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.cajas .col-12:hover {
+  transition: all 0.2s ease-in;
+  background-color: var(--color-secundario);
+}
+
+/*Formulario de Inscripcion*/
+
+.formulario button {
+  margin: 1rem auto;
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #1f8a70;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 200px;
+  border: 1px solid #00425a;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.formularioInscripcion {
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-fondo);
+  background-color: var(--color-secundario);
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  background: var(--color-footer);
+  text-align: center;
+}
+
+.formularioInscripcion h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button[type="submit"] {
+  padding: 19px 39px 18px 39px;
+  color: var(--color-fondo);
+  background-color: var(--color-texto);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid var(--color-texto);
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+button[type="reset"] {
+  padding: 19px 39px 18px 39px;
+  color: var(--color-fondo);
+  background-color: var(--color-principal);
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid var(--color-principal);
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: double;
+  padding: 0.5rem;
+}
+
+legend {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+/*footer*/
+
+footer {
+  background-color: var(--color-texto);
+  padding: 40px 20px;
+}
+
+footer span {
+  font-size: 1.5rem;
+  color: var(--color-fondo);
+}
+
+i {
+  color: var(--color-fondo);
+  font-size: 2rem;
+  padding: 1rem 1rem;
+}
+
+i:hover {
+  transition: all 0.2s ease-in;
+  color: var(--color-principal);
+}
+.row {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*Responvivo*/
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  form {
+    max-width: 480px;
+  }
+}
